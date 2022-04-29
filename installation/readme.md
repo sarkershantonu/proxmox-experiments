@@ -1,1 +1,4 @@
-# installation for 5.1*
+# Change Distribution Package Update repo
+
+# Update manager 
+```pveam update```
