@@ -4,8 +4,9 @@
 - A disk mounted in /mnt/data/
 - my choosen path /mnt/data/nextcloud/nextcloud-data 
 - Change the permission of the folder to www-data
-     chown -R www-data:www-data /mnt/data/nextcloud/nextcloud-data     
-     chmod -R 0770 /mnt/data/nextcloud/nextcloud-data
+
+          chown -R www-data:www-data /mnt/data/nextcloud/nextcloud-data     
+          chmod -R 0770 /mnt/data/nextcloud/nextcloud-data
 
 ### Setup next cloud 
 - turnkey nexcloud image
