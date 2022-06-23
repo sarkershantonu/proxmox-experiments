@@ -21,7 +21,7 @@
 
 Make sure , you can see this from webgui to your LXC, in my case 102
 
-!(nc_mount.JPG)[nc_mount.JPG]
+![nc_mount.JPG](nc_mount.JPG)
 
 
 ### Turn on LXC
