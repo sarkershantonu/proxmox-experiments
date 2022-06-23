@@ -20,7 +20,8 @@
           pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data
 
 Make sure , you can see this from webgui to your LXC, in my case 102
-!(image)[nc_mount.JPG]
+
+!(nc_mount.JPG)[nc_mount.JPG]
 
 
 ### Turn on LXC
