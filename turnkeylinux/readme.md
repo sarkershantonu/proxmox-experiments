@@ -8,4 +8,4 @@
 
 - The advance menu
 
-[advance](https://github.com/turnkeylinux/confconsole/raw/master/docs/images/01_confconsole_core_advanced.png)
+![advance](https://github.com/turnkeylinux/confconsole/raw/master/docs/images/01_confconsole_core_advanced.png)
