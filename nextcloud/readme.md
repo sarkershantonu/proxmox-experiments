@@ -36,3 +36,15 @@ and this should be ok.
           chmod -R 0770 /var/www/nextcloud-data
 
 - To change permissoin , you may need to stop apache service ```service apache2 stop``` & start after changing permission     
+
+- if you have permission issues further (like when you are using shared ZFS) what you can do before starting LXC
+
+From Host : change permission of the folder to default root(100000) group (unprevilished container)
+
+```chown -R 100000:100000 /mnt/data/nextcloud/nextcloud-data``` 
+
+then From Guest : 
+
+```chown -R www-data:www-data /var/www/nextcloud-data```  
+
+```chmod -R 0770 /var/www/nextcloud-data```
