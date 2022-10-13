@@ -12,3 +12,13 @@
 - zfs list : to know available zfs 
 
 # Last step : use WebGui to add zPool 
+
+
+# Mount a pool to proxmox host
+
+Way 1 : zfs mount name_of_your_pool
+
+```zfs mount mrrpool```
+
+Way 2 : zfs export name_of_your_pool
+```zfs export mrrpool```
