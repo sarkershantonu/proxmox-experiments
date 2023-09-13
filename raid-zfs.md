@@ -22,3 +22,9 @@ Way 1 : zfs mount name_of_your_pool
 
 Way 2 : zfs export name_of_your_pool
 ```zfs export mrrpool```
+
+# Import Existing zpool 
+
+```zpool import -f data```
+
+in here data is the pool name. Before running this, to see how many disk with label data as zfs member type, you may use command ```blkid``` to see details for each disk. 
