@@ -14,9 +14,9 @@
 - Allow root user login by removing root from  ```/etc/cockpit/disallowed-users ```
 
 - Install these basic modules 
-  https://github.com/45Drives/cockpit-file-sharing/releases/
-  https://github.com/45Drives/cockpit-navigator/releases/
-  https://github.com/45Drives/cockpit-identities/releases/
+  -- https://github.com/45Drives/cockpit-file-sharing/releases/
+  -- https://github.com/45Drives/cockpit-navigator/releases/
+  -- https://github.com/45Drives/cockpit-identities/releases/
 
 in network section you may see additionals items to install as part of NFS, install those (samba will be install)
 
