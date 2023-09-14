@@ -27,3 +27,6 @@ in network section you may see additionals items to install as part of NFS, inst
 ### Samba Share 
 
 ### FTP share
+
+Good Resources : 
+https://www.youtube.com/watch?v=Hu3t8pcq8O0
