@@ -28,3 +28,6 @@ Way 2 : zfs export name_of_your_pool
 ```zpool import -f data```
 
 in here data is the pool name. Before running this, to see how many disk with label data as zfs member type, you may use command ```blkid``` to see details for each disk. 
+
+# Usful Blog 
+- https://www.thomas-krenn.com/en/wiki/ZFS_Pool_Import_-_Proxmox_single_host_reinstall_without_full_backup
