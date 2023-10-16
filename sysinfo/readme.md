@@ -1,2 +1,3 @@
 # Motherboard Info 
-```dmidecode -t 2```
+- basic : ```dmidecode -t 2```
+- details : ```dmidecode | more```
