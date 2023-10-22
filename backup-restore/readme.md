@@ -20,3 +20,10 @@ in local-lvm
 in zfs (mPool)
 
 ```pct restore 104 /mnt//media/dump/vzdump-lxc-102-2022_10_12-20_30_13.tar.zst -storage mPool --unprivileged 1```
+
+
+# Back Up configurations 
+backup this full folder : 
+```/etc/pve```
+
+you may backup individual configurations also 
