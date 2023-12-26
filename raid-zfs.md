@@ -29,5 +29,17 @@ Way 2 : zfs export name_of_your_pool
 
 in here data is the pool name. Before running this, to see how many disk with label data as zfs member type, you may use command ```blkid``` to see details for each disk. 
 
+# ZFS removal 
+- Make sure you have not shared pool with samba/ftp. If shared, unshare this
+- Unmount zpool
+  - ```umount /data```
+- Destroy Zpool
+    - ```zpool destroy data``` , to destroy zpool.
+    - Another way is from GUI , select your PVE host -> Disks -> select pool and right upper corner there is ```More``` -> select ```Destroy```
+- if you dont want to desroy , you can export this ```zpool export  data```
+
+
+Note : ```data``` is the zpool name i am using. 
+
 # Usful Blog 
 - https://www.thomas-krenn.com/en/wiki/ZFS_Pool_Import_-_Proxmox_single_host_reinstall_without_full_backup
