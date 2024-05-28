@@ -1,8 +1,8 @@
 # intel x550-t2 fix for auto negotiation
+- install ethtool ```apt install ethtool```
+- edit ```/etc/network/interfacess```
 
-- edit ```/etc/network/interfaces```
-
-  ```
+```
 auto lo
 iface lo inet loopback
 
@@ -25,4 +25,5 @@ iface vmbr0 inet static
         bridge-ports eno1 eno2 ens2 ens6f0 ens6f1
         bridge-stp off
         bridge-fd 0
-  ```
+
+```
