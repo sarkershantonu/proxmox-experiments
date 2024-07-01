@@ -1,4 +1,8 @@
 # intel x550-t2 fix for auto negotiation
+### Problem : 
+if you use intell x550-t2 cards, and connect with 2.5G or 5G speed LAN , it wont work by default. You need to instruct firmware to run as supported speed not advertise. This is due to there are multiple OEM vendors use same chipset but they dont support 2.5g/5g speed by default. So, using this method, you can use those speed by allwing supported speed as advertised speed. 
+
+### Solution 
 - install ethtool ```apt install ethtool```
 - edit ```/etc/network/interfacess```  add  followiing lines for your network interface name, these are mine **ens6f0 ens6f1**
 
