@@ -12,3 +12,6 @@ maxvz/datasize = hdsize - rootsize - swapsize - minfree
 
 # Update manager 
 ```pveam update```
+
+
+# initial steps
