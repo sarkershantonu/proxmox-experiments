@@ -16,6 +16,9 @@
 # Setup : Guest LXC nextcloud 
 - Create an LXC(CT) Nextclould from turnkey nexcloud image and DO NOT TURN ON Container after creation. In this my container id is 102.
 - mount share folder **from host** ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
+
+![nc_mount.JPG](nc_mount.JPG)
+ 
 - Turn on Container and you login to Guest CLI
 - Change permission of the folder
 
@@ -32,7 +35,6 @@ chmod -R 0770 /var/www/nextcloud-data
 
 Make sure , you can see this from webgui to your LXC, in my case 102
 
-![nc_mount.JPG](nc_mount.JPG)
 
 
 # Tips : 
