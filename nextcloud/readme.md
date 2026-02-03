@@ -14,23 +14,22 @@
 - Set Proper permission   ```chown -R 100000:100000 /mnt/data/nextcloud/nextcloud-data```
   
 # Setup : Guest LXC nextcloud 
-- Create an LXC(CT) Nextclould from turnkey nexcloud image
+- Create an LXC(CT) Nextclould from turnkey nexcloud image and DO NOT TURN ON Container after creation. In this my container id is 102.
+- mount share folder **from host** ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
+- Turn on Container and you login to Guest CLI
+- Change permission of the folder
+```chown -R www-data:www-data /var/www/nextcloud-data
+chmod -R 0770 /var/www/nextcloud-data```
+- Researt the Container and continue finishing setup
 - You can setup with domain name
 - you can setup with let's encrypt
  
 ### Turn off LXC
 
-### mount share folder from host
-
-          pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data
-
 Make sure , you can see this from webgui to your LXC, in my case 102
 
 ![nc_mount.JPG](nc_mount.JPG)
 
-
-### Turn on LXC
-and this should be ok. 
 
 # Tips : 
 
@@ -59,9 +58,8 @@ then From Guest :
 -   ```chown -R 100000:100000 /mnt/data/nextcloud/nextcloud-data```
 -   ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
 From Guest
-```chown -R www-data:www-data /var/www/nextcloud-data
-chmod -R 0770 /var/www/nextcloud-data```
+
 
 # Notes :
 - Nectcloud Turnkey container project [Link](https://www.turnkeylinux.org/nextcloud)
-- Download nextcloud container from your CT Template page
+- Download [nextcloud container](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/debian-12-turnkey-nextcloud_18.1-1_amd64.tar.gz)  from your CT Templatefrom [page](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/)
