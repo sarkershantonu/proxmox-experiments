@@ -65,7 +65,7 @@ From Guest
 # Configurations 
 
 ### increase file size and time out
-- my **.user.ini**(.user.ini) file 
+- my [**.user.ini**](.user.ini) file 
 ```
 mbstring.func_overload=0
 always_populate_raw_post_data=-1
