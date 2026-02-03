@@ -27,7 +27,7 @@ Make sure , you can see this from webgui to your LXC, in my case 102
 ### Turn on LXC
 and this should be ok. 
 
-#Tips : 
+# Tips : 
 
 - if you see http 500 on web gui, please see logs /var/www/nextcloud/data/nextcloud.log 
 - if you see permisssion issues, you can redo permission from LXC 
