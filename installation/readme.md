@@ -16,4 +16,12 @@ maxvz/datasize = hdsize - rootsize - swapsize - minfree
 
 # initial steps
 
+# Various configurations
+
+# backup 
+
+# mail server
+
+# child nodes 
+
 # [Authe Basics](auth-pve.md)
