@@ -20,6 +20,7 @@
 - Change permission of the folder
 ```chown -R www-data:www-data /var/www/nextcloud-data
 chmod -R 0770 /var/www/nextcloud-data```
+
 - Researt the Container and continue finishing setup
 - You can setup with domain name
 - you can setup with let's encrypt
