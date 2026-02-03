@@ -34,6 +34,44 @@ chmod -R 0770 /var/www/nextcloud-data
 # Update Next cloud : 
 - Change permission in guest cli ```chown -R www-data:www-data nextcloud```
 - From web gui , login as admin and update
+
+### Updated 
+- From Host
+-   ```chown -R 100000:100000 /mnt/data/nextcloud/nextcloud-data```
+-   ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
+From Guest
+
+# Configurations 
+
+### increase file size and time out
+- Size increase parameters (16gb)
+ ```
+php_value upload_max_filesize 16G
+php_value post_max_size 16G
+```
+
+- timeout increase(1hr)
+```
+php_value max_input_time 3600
+php_value max_execution_time 3600
+
+```  
+- my [**.user.ini**](.user.ini) file 
+```
+mbstring.func_overload=0
+always_populate_raw_post_data=-1
+default_charset='UTF-8'
+output_buffering=0
+php_value upload_max_filesize 16G
+php_value post_max_size 16G
+php_value max_input_time 3600
+php_value max_execution_time 3600
+```
+
+# Notes :
+- Nectcloud Turnkey container project [Link](https://www.turnkeylinux.org/nextcloud)
+- Download [nextcloud container](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/debian-12-turnkey-nextcloud_18.1-1_amd64.tar.gz)  from your CT Templatefrom [page](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/)
+
 # Tips : 
 
 - if you see http 500 on web gui, please see logs /var/www/nextcloud/data/nextcloud.log 
@@ -55,28 +93,3 @@ then From Guest :
 ```chown -R www-data:www-data /var/www/nextcloud-data```  
 
 ```chmod -R 0770 /var/www/nextcloud-data```
-
-### Updated 
-- From Host
--   ```chown -R 100000:100000 /mnt/data/nextcloud/nextcloud-data```
--   ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
-From Guest
-
-# Configurations 
-
-### increase file size and time out
-- my [**.user.ini**](.user.ini) file 
-```
-mbstring.func_overload=0
-always_populate_raw_post_data=-1
-default_charset='UTF-8'
-output_buffering=0
-php_value upload_max_filesize 16G
-php_value post_max_size 16G
-php_value max_input_time 3600
-php_value max_execution_time 3600
-```
-
-# Notes :
-- Nectcloud Turnkey container project [Link](https://www.turnkeylinux.org/nextcloud)
-- Download [nextcloud container](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/debian-12-turnkey-nextcloud_18.1-1_amd64.tar.gz)  from your CT Templatefrom [page](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/)
