@@ -15,3 +15,5 @@ maxvz/datasize = hdsize - rootsize - swapsize - minfree
 
 
 # initial steps
+
+# [Authe Basics](auth-pve.md)
