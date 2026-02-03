@@ -44,6 +44,7 @@ From Guest
 # Configurations 
 
 ### increase file size and time out
+- Configuration file ```/var/www/nextcloud/.user.ini```
 - Size increase parameters (16gb)
  ```
 php_value upload_max_filesize 16G
