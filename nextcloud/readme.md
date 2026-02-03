@@ -18,8 +18,11 @@
 - mount share folder **from host** ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
 - Turn on Container and you login to Guest CLI
 - Change permission of the folder
-```chown -R www-data:www-data /var/www/nextcloud-data
-chmod -R 0770 /var/www/nextcloud-data```
+
+```
+chown -R www-data:www-data /var/www/nextcloud-data
+chmod -R 0770 /var/www/nextcloud-data
+```
 
 - Researt the Container and continue finishing setup
 - You can setup with domain name
