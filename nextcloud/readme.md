@@ -31,7 +31,9 @@ chmod -R 0770 /var/www/nextcloud-data
 - You can setup with domain name
 - you can setup with let's encrypt
  
-
+# Update Next cloud : 
+- Change permission in guest cli ```chown -R www-data:www-data nextcloud```
+- From web gui , login as admin and update
 # Tips : 
 
 - if you see http 500 on web gui, please see logs /var/www/nextcloud/data/nextcloud.log 
@@ -60,6 +62,20 @@ then From Guest :
 -   ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
 From Guest
 
+# Configurations 
+
+### increase file size and time out
+- my **.user.ini**(.user.ini) file 
+```
+mbstring.func_overload=0
+always_populate_raw_post_data=-1
+default_charset='UTF-8'
+output_buffering=0
+php_value upload_max_filesize 16G
+php_value post_max_size 16G
+php_value max_input_time 3600
+php_value max_execution_time 3600
+```
 
 # Notes :
 - Nectcloud Turnkey container project [Link](https://www.turnkeylinux.org/nextcloud)
