@@ -12,6 +12,7 @@
 - A ZFS pool permanently mounted in **/mnt/data/** 
 - my nextcloud data folder path will be **/mnt/data/nextcloud/nextcloud-data**
 - Set Proper permission   ```chown -R 100000:100000 /mnt/data/nextcloud/nextcloud-data```
+- 
   
 # Setup : Guest LXC nextcloud 
 - Create an LXC(CT) Nextclould from turnkey nexcloud image and DO NOT TURN ON Container after creation. In this my container id is 102.
@@ -32,14 +33,8 @@ chmod -R 0770 /var/www/nextcloud-data
 - you can setup with let's encrypt
  
 # Update Next cloud : 
-- Change permission in guest cli ```chown -R www-data:www-data nextcloud```
-- From web gui , login as admin and update
-
-### Updated 
-- From Host
--   ```chown -R 100000:100000 /mnt/data/nextcloud/nextcloud-data```
--   ```pct set 102 -mp1 /mnt/data/nextcloud/nextcloud-data,mp=/var/www/nextcloud-data```
-From Guest
+- Change permission in **guest LXC** cli ```chown -R www-data:www-data nextcloud```
+- From web gui , login as admin and update and follow step by step instructions. 
 
 # Configurations 
 
