@@ -1,12 +1,9 @@
 # Tips to use turnkeylinux
 
 ### [Confconsole](https://www.turnkeylinux.org/docs/confconsole)  
-- Type this in terminal 
+- Type this in LXC terminal ```confconsole```
 
-
-      confconsole
-
-You see simple menu 
+You see a simple menu 
 
 ![simple](https://github.com/turnkeylinux/confconsole/raw/master/docs/images/00_confconsole_core_main.png)
 
