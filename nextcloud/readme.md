@@ -64,6 +64,19 @@ php_value max_input_time 3600
 php_value max_execution_time 3600
 ```
 
+### Allow IP login beside domain name 
+- Edit the file **/var/www/nextcloud/config/config.php** to add line in array under **trusted_domains**
+
+ My Example Trusted Domain : 
+ 
+```
+'trusted_domains' => 
+  array (
+    0 => 'shantonu.duckdns.org',
+    1 => '192.168.1.102',
+  ),
+```
+
 # Notes :
 - Nectcloud Turnkey container project [Link](https://www.turnkeylinux.org/nextcloud)
 - Download [nextcloud container](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/debian-12-turnkey-nextcloud_18.1-1_amd64.tar.gz)  from your CT Templatefrom [page](http://mirror.turnkeylinux.org/turnkeylinux/images/proxmox/)
