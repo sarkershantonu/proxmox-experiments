@@ -1,7 +1,7 @@
 # Next cloud Setup
 - Nextcloud Host will be a container/LXC 
 - Next clould Data will be in seperate folder/HDD (for easy data mintanance & backup)
-- Domain name will be free domain , I am using duckdns.org. you can use paid domain name also. For domain name, please [**see**](.duckdns.md)
+- Domain name will be free domain , I am using duckdns.org. you can use paid domain name also. For domain name, please [**see**](duckdns.md)
 
 ### Benifits of the setup 
 - Data is separate from nextcloud configuration
