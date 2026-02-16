@@ -9,3 +9,5 @@
  
  # Pass throught to Vm 
  https://pve.proxmox.com/wiki/Physical_disk_to_kvm
+
+# [Pass through VM](mount-folder-vm-by-virtiofs.md)
