@@ -4,3 +4,5 @@
 - in VM => hardware => Add => ```Virtiofsd``` type resource and select Direct IO and include that folder
 - Mount that folder ```mount -t virtiofs VMShare /mnt/hostshare```
 - for permanent mount, /etc/fstab => ```VMShare /mnt/hostshare virtiofs rw,relatime 0 0```
+
+# [Detailed document](https://woshub.com/proxmox-shared-host-directory/)
