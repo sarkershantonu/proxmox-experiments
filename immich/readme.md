@@ -18,6 +18,7 @@ mkdir -p /data/immich-photos
 chown -R immich:immich /data/immich-photos
 chmod -R 775 /data/immich-photos
 ```
-- copy the data content ```cp -ra /opt/immich/upload/* /data/immich-photos```
+- copy the data content ``` cp -ra /opt/immich/upload/* /data/immich-photos```
   
 - Change folcer location configuration in **.env** ```IMMICH_MEDIA_LOCATION=/data/immich-photos```
+- Restart all Immich services ```service  immich* restart  ```, status check ```service  immich* status```
