@@ -21,4 +21,4 @@ chmod -R 775 /data/immich-photos
 - copy the data content ``` cp -ra /opt/immich/upload/* /data/immich-photos```
   
 - Change folcer location configuration in **.env** ```IMMICH_MEDIA_LOCATION=/data/immich-photos```
-- Restart all Immich services ```service  immich* restart  ```, status check ```service  immich* status```
+- Restart all Immich services ```service  immich* restart  ```, status check ```service  immich* status``` (can be another way also) 
