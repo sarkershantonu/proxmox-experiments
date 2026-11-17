@@ -1,6 +1,11 @@
 # Immich Personal Photo server
 - Default port 2283
 
+### Installation 
+- Community script : https://community-scripts.org/scripts/immich?from=scripts
+- Github https://github.com/community-scripts/ProxmoxVE/blob/main/ct/immich.sh
+- Installation ```bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/immich.sh)"```
+
 ### Use Custom Folder 
 - Stop immich LXC after setup 
 - In Host, make a folder and change permissions
